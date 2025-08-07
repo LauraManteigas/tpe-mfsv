@@ -1,7 +1,7 @@
 # Bayesian-tuned MFSV forecasting
 This code accompanies the article "Bayesian-Tuned Multivariate Factor Stochastic Volatility Model: Forecasting Amid Geopolitical Crisis".
 
-It integrates TPE into a MFSV model to improve 50-day-ahead forecasts for 5 energy futures:
+It uses TPE to optimize the parameters of a MFSV model, improving 50-day-ahead forecasts for 5 energy futures:
 + Brent
 + WTI
 + Dubai Crude
