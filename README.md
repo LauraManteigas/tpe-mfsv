@@ -14,19 +14,15 @@ It uses TPE to optimize the parameters of a MFSV model, improving 50-day-ahead f
 
 ## Project Structure
 ```bash
-├── Data/                              # Input data files (CSV format)                    
-├── Results/                           # Model outputs and diagnostics
-│   ├── MFSV/                          # Outputs specific to MFSV
-├── Scripts/
-│   ├── config.R                       # Model configuration and parameters               
-│   ├── setup.R                        # Package loading and environment setup          
-│   ├── 00-data-loading.R              # Data reading and preprocessing
-│   ├── 01-data-visualization.R        # Data plot highlighting train/test
-│   ├── 02-mfsv.R                      # MFSV model estimation  
-│   ├── 03-bayesian-optimization.R     # Hyperparameter tuning via Bayesian Optimization
-│   ├── 04-save-results.R              # Save results and intermediate outputs   
-│   └── 05-mfsv-visualization.R        # Forecast and volatility plots
-├── main.R                             # Main workflow script                   
+├── data/                         # Input data files (CSV format)                    
+├── src/                          # Model outputs and diagnostics                 
+│   ├── data-loading.R            # Data reading and preprocessing
+│   ├── data-visualization.R      # Data plot highlighting train/test
+│   ├── kde.py                    # Multidimensional kernel
+│   ├── utils.R                   # Auxiliary functions
+│   ├── tpe                       # Outputs specific to TPE (and MFSV)
+├── settings.R                    # Package loading and environment setup
+├── main.R                        # Get results            
 └── README.md     
 ```
 
