@@ -37,8 +37,6 @@ source_scripts(c(
   "src/data-loading.R",
   "src/data-visualization.R",
   "src/tpe.R",
-  #"src/params-sensitivity.R",
-  "src/best-worst-plots.R",
   "src/utils.R"
 ))
 
@@ -82,4 +80,5 @@ series_color <- c(
   "WTI" = "#00A087B2",
   "Gasoline" = "#3C5488B2",
   "HO" = "#EFC011B1"
+
 )
